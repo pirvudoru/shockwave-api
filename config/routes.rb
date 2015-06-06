@@ -15,6 +15,8 @@ Rails.application.routes.draw do
   #   resources :products
 
   resources :users
+  resources :handshakes, only: [:create]
+
 
 
   # Example resource route with options:
