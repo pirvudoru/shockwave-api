@@ -49,5 +49,7 @@ end
 group :test do
   gem 'rspec-rails'
   gem 'its'
+  gem 'database_cleaner'
+  gem 'mongoid-rspec'
 end
 
