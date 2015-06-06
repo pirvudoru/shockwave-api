@@ -38,6 +38,10 @@ describe UsersController do
 
         expect(User.last.phone_number).to eq(params[:user][:phone_number])
       end
+
+      it 'returns id in response body' do
+        expect(JSON.parse(subject.body)['id']).not_to be_nil
+      end
     end
   end
 end
